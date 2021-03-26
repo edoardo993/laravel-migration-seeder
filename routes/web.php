@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Route::get('/albums', function () {
+//     return view('index');
+// });
+
+Route::get('/albums', 'MainController@index');
